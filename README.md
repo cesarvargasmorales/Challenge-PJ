@@ -23,5 +23,27 @@ This POC/Challenge run with those app:
 |Terraform | v1.0.0  |
 |Gcloud SDK| 344.000 |
 
+The commands needed to implement those resources is:
+
+´´´
+terraform init \
+terraform validate \
+terraform plan \
+terraform apply -auto-approve
+´´´
+*This last command apply the parameter ´-auto-approve´ is to run NON-interactive*
 
 ## GCP
+In this section I created in GCP VM with CentOS-7 and the custom resources requested. 
+->gcp/
+  -> modules
+     -> instance-group
+        -> main.tf
+        -> variable.tf
+     -> template
+        -> init-script.sh
+  -> config.tf
+  -> main.tf
+  -> terraform.tfvars
+  -> variable.tf
+

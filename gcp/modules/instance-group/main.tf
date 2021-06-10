@@ -16,6 +16,8 @@ resource "google_compute_instance_template" "instance_template" {
   network_interface {
     network = "default"
     access_config {
+      nat_ip = var.nat_ip
+      network_tier = "STANDARD"
     }
   }
 
