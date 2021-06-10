@@ -1,0 +1,5 @@
+# Ignore terraform template
+**/.terraform/
+**/.terraform.lock*
+**/.terraform.lock*
+**/terraform.tfstate*
