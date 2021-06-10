@@ -1,13 +1,13 @@
 # Challenge-PJ
 
 ## Table of Contents
-01. [Instroduction] (#Instroduction)
+01. [Introduction](#Introduction)
 02. [GCP](#GCP)
-03. [AWS] (#AWS)
+03. [AWS](#AWS)
 
-## Instroduction
+## Introduction
 
-This POC/Challenge is requested by PJ to apply in place DevOps Engineen and this contants in create a module to implement a VM and this must be include with 4 sections:
+This POC/Challenge is requested by PJ to apply in the DevOps Engineer position and this consists of the creation of a module to implement a VM and this must be include with 4 sections:
 
 |N°| Acepted critiar                   |
 |--| ----------------------------------|
