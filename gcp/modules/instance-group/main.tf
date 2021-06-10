@@ -9,17 +9,21 @@ resource "google_compute_instance_template" "instance_template" {
 
   disk {
     source_image = data.google_compute_image.centos7.self_link
-    auto_delete  = true
-    boot         = true
+    type         = "PERSISTENT"
+    disk_size_gb = var.disk_size_gb
   }
 
   network_interface {
     network = "default"
+    access_config {
+    }
   }
 
   lifecycle {
     create_before_destroy = true
   }
+
+  metadata_startup_script = var.metadata_startup_script
 }
 
 resource "google_compute_instance_group_manager" "instance_group_manager" {

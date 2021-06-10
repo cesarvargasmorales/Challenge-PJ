@@ -7,5 +7,7 @@ variable "image_project_id" {}
 variable "family" {}
 variable "instance_name" {}
 variable "instance_type" {}
+variable "disk_size_gb" {}
 variable "zone" {}
 variable "instance_size" {}
+variable "nat_ip" {}
