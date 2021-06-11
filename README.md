@@ -21,7 +21,7 @@ This POC/Challenge run with those app:
 |APP       | Version |
 |----------|---------|
 |Terraform | v1.0.0  |
-|Gcloud SDK| 344.000 |
+|Gcloud SDK| 344.0.0 |
 
 The commands needed to implement those resources is:
 
@@ -32,24 +32,14 @@ terraform plan ;\
 terraform apply -auto-approve
 ```
 
-*This last command apply the parameter ´-auto-approve´ is to run NON-interactive*
+*This last command apply the parameter `-auto-approve` is to run NON-interactive*
 
 ## GCP
 In this section I created in GCP VM with CentOS-7 and the custom resources requested. 
 
-```Mermaid
-graph TD
-    B["fa:fa-twitter Folder GCP" ]
-    B --> C[fa:fa-ban Modules]
-    B --> D(main.tf)
-    B --> E(variable.tf)
-    B --> F(terraform.tfvars)
-    B --> G(config.tf)
-    C --> A[fa:fa-ban template]
-    C --> H[fa:fa-ban instance-group]
-    H --> I(main.tf)
-    H --> J(variable.tf)
-    A --> K(init-script.sh)
-```
+![GCP WorkFlow](.images/gcp.png)
+
 ## AWS
 In this section I created in AWS VM with CentOS-7 and the custom resources requested. 
+
+![AWS WorkFlow](.images/aws.png)
